@@ -1,0 +1,16 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+$ORIGIN 36.31.172.in-addr.arpa.
+@	IN	SOA	ns1.mysitenginx.giize.com. admin.mysitenginx.giize.com. (
+			2023281101		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+		NS	ns1.mysitenginx.giize.com.
+33	PTR	mysitenginx.giize.com.
+33	PTR	site1.mysitenginx.giize.com.
+33	PTR	site2.mysitenginx.giize.com.
